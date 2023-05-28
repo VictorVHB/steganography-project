@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/style.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <h1> Merging two different images with steganography cryptografy </h1>
+
+    <canvas id="Image_to_hide" style="border: 1px solid black;" width="1300" height="480"> </canvas>
+
+    <p>Upload image ⇒ <input type="file" multiple="false" accept="image/*" id="fileInput1" onchange="draw_first_Image()">
+
+    <br>
+
+    <canvas id="Displayed_image" style="border: 1px solid black;" width="1300" height="480"> </canvas>
+
+    <p>Upload image ⇒ <input type="file" multiple="false" accept="image/*" id="fileInput2" onchange="draw_displayed_image()">
+
+    <br>
+
+    <canvas id="Encrypted_image" style="border: 1px solid black;" width="1300" height="480"> </canvas>
+
+    <p>Work the images <input type="button" id="work_images_button" value="Steganography" onclick="applySteganography()">
+
+      <br>
+
+    <p>Decode <input type="button" id="decode_images" value="Decode" onclick="decode()">
+
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
